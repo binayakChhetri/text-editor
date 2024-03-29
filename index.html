@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text editor (Basic)</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <a href="https://icons8.com/icon/3bDUQNRbWKUt/bold"></a>
+    <link rel="icon" href="" />
+  </head>
+  <body>
+    <section class="toolbar">
+      <div class="first setting">
+        <select name="" id="font-family"></select>
+        <span id="triangle"></span>
+      </div>
+      <div class="setting">
+        <input id="font-size" placeholder="size" type="number" />
+      </div>
+      <div class="setting">
+        <input id="color" placeholder="Enter color name" type="text" />
+      </div>
+      <div class="setting">
+        <img id="bold" src="./icons/bold.svg" alt="bold text" />
+        <img id="italic" src="./icons/italic.svg" alt="italic text" />
+        <img id="underline" src="./icons/underline.svg" alt="underline text" />
+      </div>
+      <div class="setting">
+        <img id="align-left" src="./icons/align_left.svg" alt="align left" />
+        <img
+          id="align-center"
+          src="./icons/align_center.svg"
+          alt="align center"
+        />
+        <img id="align-right" src="./icons/align_right.svg" alt="align right" />
+      </div>
+    </section>
+
+    <section class="writing-section">
+      <textarea placeholder="Type here" id="text-area"></textarea>
+    </section>
+    <section class="analyzing-place">
+      <div class="infos">
+        <span>Total Words</span>
+        <span id="total-words">0</span>
+      </div>
+      <div class="infos">
+        <span>Total Letters</span>
+        <span id="total-letters">0</span>
+      </div>
+      <div class="infos">
+        <span>Total Spaces</span>
+        <span id="total-spaces">0</span>
+      </div>
+    </section>
+  </body>
+  <script src="script.js"></script>
+</html>
